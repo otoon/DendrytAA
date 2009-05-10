@@ -1,5 +1,6 @@
 package com.dendrytdev.org.client;
 
+import com.dendrytdev.org.client.problemOverview.ProblemOverview;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -137,5 +138,10 @@ public class DendrytAA implements EntryPoint {
 		MyHandler handler = new MyHandler();
 		sendButton.addClickHandler(handler);
 		nameField.addKeyUpHandler(handler);
+		
+		
+		
+		
+		RootPanel.get().add(new ProblemOverview());
 	}
 }
