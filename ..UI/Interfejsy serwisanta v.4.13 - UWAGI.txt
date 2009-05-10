@@ -1,0 +1,54 @@
+-----------------------------------------------------------------------------------------------
+1. na pierwszym rysunku (widok serwisanta) jest w zak³adce dodawanie zg³oszenia
+w grupie opis problemu ostania linijka:
+waga zglaszajacego: PROPONUJE NAZWAC DOWOLNIE INACZEJ
+ALE NIE waga zglaszajacego, bo jedyne co jest tu intuicyjne to podanie
+wagi klienta w kilogramach
+---------------------------------------------------------------- KMIC 4.13g.19.30-------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+2. na pierwszym rysunku (widok serwisanta) jest w zak³adce przegladanie zg³oszenia
+w grupie opis produktu przedostania linijka:
+waga zglaszajacego: PROPONUJE NAZWAC DOWOLNIE INACZEJ
+ALE NIE waga zglaszajacego, bo jedyne co jest tu intuicyjne to podanie
+wagi klienta w kilogramach
+---------------------------------------------------------------- KMIC 4.13g.19.30-------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+3. na pierwszym rysunku (widok serwisanta) jest w zak³adce przegladanie zg³oszenia
+opis produktu i przydzia³u luzem, porponuj¹ zrobiæ z nich dwie grupy tak jak jest to 
+zrobione z opisem problemu na tej samej stronie
+---------------------------------------------------------------- KMIC 4.13g.19.30-------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+4. na pierwszym rysunku (widok serwisanta) jest w zak³adce przegladanie zg³oszenia
+opis problemu, w nim nie mo¿na edytowaæ opisu (zak³adka przegl¹danie)
+wiêc powinien byæ na szaro a nie na bia³o (co sugeruje mo¿liwoœæ edycji)
+---------------------------------------------------------------- KMIC 4.13g.19.30-------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+5. na pierwszym rysunku (widok serwisanta) jest w zak³adce dodawanie zg³oszenia
+dlaczego serwisant nie ma mo¿liwoœci edycji za³¹cznika?
+---------------------------------------------------------------- KMIC 4.13g.20.00-------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+5. dlaczego nie ma interfesju dla klienta?
+---------------------------------------------------------------- KMIC 4.13g.20.00-------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+6. Aby zachowac konwencje dla serwisanta w UCach mamy ZGLASZANIE 
+PROBLEMU, a na pierwszym rysunku jest dodawanie zgloszeñ.
+Wiêc jak? Co wybieracie jako core team:?
+---------------------------------------------------------------- KMIC 4.13g.20.00-------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+7. Na pierwszym rysunku DODAWANIE ZGLOSZENIA nie ma nadawania priorytetu,
+sprawdzania polisy dla danego klienta w opisie UCsa jest ¿e ma byæ przekazany dla
+projektantów ale chyba inczej siê umawialiœmy, tak¿ê nie ma tego ani tego
+---------------------------------------------------------------- KMIC 4.15g.17.00-------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+8. Na pierwszym rysunku DODAWANIE ZGLOSZENIA najpierw powinno siê podawaæ 
+dane klienta poniewa¿ jest to bardziej intuicyjne, podczas rozmowy ze zg³aszaj¹cym
+---------------------------------------------------------------- KMIC 4.15g.17.00-------
+-----------------------------------------------------------------------------------------------
