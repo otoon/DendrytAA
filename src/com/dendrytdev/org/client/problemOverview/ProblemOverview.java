@@ -67,41 +67,18 @@ public class ProblemOverview extends Composite {
 
 	
 	
-	static void addProblemPropertyField(VerticalPanel panel, String labelName, TextBox textBox){
+	static HorizontalPanel addProblemPropertyField(String labelName, TextBox textBox){
 		HorizontalPanel horizontalPane = new HorizontalPanel();
 		horizontalPane.add(new Label(labelName));
 		horizontalPane.add(textBox);		
-		panel.add(horizontalPane);
-	}
-
-	class C{
-		String labelName;
-		TextBox textBox;
-		public C(String s, TextBox t){
-			labelName = s;
-			textBox = t;
-		}
-	}
-	
-	static void addProblemPropertyField(VerticalPanel panel, C c){
-		addProblemPropertyField(panel, c.labelName, c.textBox);
+		return horizontalPane;
 	}
 	
 	void addProblemPropertiesFields(VerticalPanel panel) {
-		C[] cArr = new C[6];
-		cArr[0] = new C("Produkt:", _produktTextBox);
-		cArr[1] = new C("Imie zglaszajacego:", _firstNameTextBox);
-		cArr[2] = new C("Nazwisko zglaszajacego:", _surnameTextBox);
-		cArr[3] = new C("Telefon zglaszajacego:", _phoneTextBox);
-		cArr[4] = new C("Waga zglaszajacego:", _ratioTextBox);
-		cArr[5] = new C("Data zgloszenia:", _dateTextBox);
 		
-		// this is not working even i this fucking clear way KURWA!!!
-		// fucked buged designer plugin
-		addProblemPropertyField(panel, cArr[0]);
-		
-//		addProblemPropertyField(panel, "Produkt:", _produktTextBox);
-//		addProblemPropertyField(panel, "Imie zglaszajacego:", _firstNameTextBox);
+//		Nawet tak nie dziala, co za syf!!!
+		panel.add(addProblemPropertyField("Produkt:", _produktTextBox));
+		panel.add(addProblemPropertyField("Imie zglaszajacego:", _firstNameTextBox));
 //		addProblemPropertyField(panel, "Nazwisko zglaszajacego:", _surnameTextBox);
 //		addProblemPropertyField(panel, "Telefon zglaszajacego:", _phoneTextBox);
 //		addProblemPropertyField(panel, "Waga zglaszajacego:", _ratioTextBox);
