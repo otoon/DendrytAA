@@ -12,8 +12,21 @@ import com.google.gwt.user.client.ui.AbsolutePanel;
 import com.google.gwt.user.client.ui.TextBox;
 
 public class ProblemOverview extends Composite {
+	TextBox _produktTextBox;
+	TextBox _firstNameTextBox;
+	TextBox _surnameTextBox;
+	TextBox _phoneTextBox;
+	TextBox _ratioTextBox;
+	TextBox _dateTextBox;
 
 	public ProblemOverview() {
+		_produktTextBox = new TextBox();
+		_firstNameTextBox = new TextBox();
+		_surnameTextBox = new TextBox();
+		_phoneTextBox = new TextBox();
+		_ratioTextBox = new TextBox();
+		_dateTextBox = new TextBox();
+		
 		{
 			HorizontalPanel horizontalPanel = new HorizontalPanel();
 			initWidget(horizontalPanel);
@@ -52,60 +65,47 @@ public class ProblemOverview extends Composite {
 		}
 	}
 
-	TextBox _produktTextBox;
-	TextBox _firstNameTextBox;
-	TextBox _surnameTextBox;
-	TextBox _phoneTextBox;
-	TextBox _ratioTextBox;
-	TextBox _dateTextBox;
 	
 	
-	void addProblemPropertyField(VerticalPanel panel, String labelName, TextBox t){
+	static void addProblemPropertyField(VerticalPanel panel, String labelName, TextBox textBox){
 		HorizontalPanel horizontalPane = new HorizontalPanel();
-		panel.add(horizontalPane);
 		horizontalPane.add(new Label(labelName));
-		_produktTextBox = new TextBox();
-		horizontalPane.add(t);		
+		horizontalPane.add(textBox);		
+		panel.add(horizontalPane);
+	}
+
+	class C{
+		String labelName;
+		TextBox textBox;
+		public C(String s, TextBox t){
+			labelName = s;
+			textBox = t;
+		}
+	}
+	
+	static void addProblemPropertyField(VerticalPanel panel, C c){
+		addProblemPropertyField(panel, c.labelName, c.textBox);
 	}
 	
 	void addProblemPropertiesFields(VerticalPanel panel) {
-		HorizontalPanel horizontalPane = new HorizontalPanel();
-		panel.add(horizontalPane);
-		horizontalPane.add(new Label("Produkt:"));
-		_produktTextBox = new TextBox();
-		horizontalPane.add(_produktTextBox);
+		C[] cArr = new C[6];
+		cArr[0] = new C("Produkt:", _produktTextBox);
+		cArr[1] = new C("Imie zglaszajacego:", _firstNameTextBox);
+		cArr[2] = new C("Nazwisko zglaszajacego:", _surnameTextBox);
+		cArr[3] = new C("Telefon zglaszajacego:", _phoneTextBox);
+		cArr[4] = new C("Waga zglaszajacego:", _ratioTextBox);
+		cArr[5] = new C("Data zgloszenia:", _dateTextBox);
 		
-		HorizontalPanel horizontalPane2 = new HorizontalPanel();
-		panel.add(horizontalPane2);
-		horizontalPane2.add(new Label("Imie zglaszajacego:"));
-		_produktTextBox = new TextBox();
-		horizontalPane2.add(_produktTextBox);
+		// this is not working even i this fucking clear way KURWA!!!
+		// fucked buged designer plugin
+		addProblemPropertyField(panel, cArr[0]);
 		
-		HorizontalPanel horizontalPane = new HorizontalPanel();
-		panel.add(horizontalPane);
-		horizontalPane.add(new Label("Nazwisko zglaszajacego:"));
-		_produktTextBox = new TextBox();
-		horizontalPane.add(_produktTextBox);
-		
-		HorizontalPanel horizontalPane = new HorizontalPanel();
-		panel.add(horizontalPane);
-		horizontalPane.add(new Label("Telefon zglaszajacego:"));
-		_produktTextBox = new TextBox();
-		horizontalPane.add(_produktTextBox);
-		
-		HorizontalPanel horizontalPane = new HorizontalPanel();
-		panel.add(horizontalPane);
-		horizontalPane.add(new Label("Waga zglaszajacego:"));
-		_produktTextBox = new TextBox();
-		horizontalPane.add(_produktTextBox);
-		
-		HorizontalPanel horizontalPane = new HorizontalPanel();
-		panel.add(horizontalPane);
-		horizontalPane.add(new Label("Data zgloszenia:"));
-		_produktTextBox = new TextBox();
-		horizontalPane.add(_produktTextBox);
-		
-		
+//		addProblemPropertyField(panel, "Produkt:", _produktTextBox);
+//		addProblemPropertyField(panel, "Imie zglaszajacego:", _firstNameTextBox);
+//		addProblemPropertyField(panel, "Nazwisko zglaszajacego:", _surnameTextBox);
+//		addProblemPropertyField(panel, "Telefon zglaszajacego:", _phoneTextBox);
+//		addProblemPropertyField(panel, "Waga zglaszajacego:", _ratioTextBox);
+//		addProblemPropertyField(panel, "Data zgloszenia:", _dateTextBox);
 	}
 	
 	
