@@ -1,5 +1,6 @@
 package com.dendrytdev.org.client;
 
+
 import com.dendrytdev.org.client.problemOverview.ProblemOverview;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
@@ -39,6 +40,7 @@ public class DendrytAA implements EntryPoint {
 	 * This is the entry point method.
 	 */
 	public void onModuleLoad() {
+
 //		final Button sendButton = new Button("Send");
 //		final TextBox nameField = new TextBox();
 //		nameField.setText("GWT User");
@@ -138,10 +140,9 @@ public class DendrytAA implements EntryPoint {
 //		MyHandler handler = new MyHandler();
 //		sendButton.addClickHandler(handler);
 //		nameField.addKeyUpHandler(handler);
-//		
-//		
-//		
-//		
+		
+		
+
 		RootPanel.get().add(new ProblemOverview());
 	}
 }
